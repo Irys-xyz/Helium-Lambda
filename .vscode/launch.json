@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "Helium-Lambda:HelloWorldFunction",
+            "invokeTarget": {
+                "target": "template",
+                "templatePath": "${workspaceFolder}/template.yaml",
+                "logicalId": "HelloWorldFunction"
+            },
+            "lambda": {
+                "payload": {},
+                "environmentVariables": {
+                    "SOLANA_KEY": "",
+                    "BUNDLR_URL": ""
+                }
+            }
+        }
+    ]
+}
